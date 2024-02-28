@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/lnSmartSolar"
+    tools:context="viewModel.view.FiltrarFacturasActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolBarFiltrarF">
+
+        <TextView
+            android:id="@+id/tituloFiltrarFacturas"
+            style="@style/h1FiltrarF"
+
+            android:fontFamily="@font/open_sans" />
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            style="@style/botonCerrarFiltrarF" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/fechaTitulo"
+        style="@style/h2FiltrarF" />
+
+    <LinearLayout style="@style/lnFullWrap">
+
+        <TextView
+            android:id="@+id/fechaDesde"
+            style="@style/desdeFiltrarF" />
+
+        <TextView
+            android:id="@+id/fechaHasta"
+            style="@style/hastaFiltrarF" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/lnFullWrap">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fechaBotonDesde"
+            style="@style/botonFechaDesdeFiltrarF"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fechaBotonHasta"
+            style="@style/botonFechaHastaFiltrarF" />
+
+
+    </LinearLayout>
+
+    <View style="@style/viewsFiltrarF" />
+
+    <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+        <TextView
+            android:id="@+id/h2SlideFiltrarF"
+            style="@style/h2SlideFiltrarFacturas" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+        <TextView
+            android:id="@+id/tvRangoSlide"
+            style="@style/textViewRangoSlide" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        style="@style/lnWidthMatchHeightWrap">
+
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/SlideFiltrarF"
+            style="@style/SlideFiltrarFacturas" />
+
+    </LinearLayout>
+
+    <View style="@style/viewsFiltrarF" />
+
+    <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+        <TextView style="@style/h2FiltrarFestado" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/lnCheckbox">
+
+        <CheckBox
+            android:id="@+id/cbPagadas"
+            style="@style/checkBoxPagadas" />
+
+        <CheckBox
+            android:id="@+id/cbAnuladas"
+            style="@style/checkBoxAnuladas" />
+
+        <CheckBox
+            android:id="@+id/cbCuotaFija"
+            style="@style/checkBoxCuotaFija" />
+
+        <CheckBox
+            android:id="@+id/cbPendienteDePago"
+            style="@style/checkBoxPendienteDePago" />
+
+        <CheckBox
+            android:id="@+id/cbPlanDePago"
+            style="@style/checkBoxPlanDePago" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/lnBtnsFiltrarF">
+
+        <Button
+            android:id="@+id/btnAplicarFiltrarF"
+            style="@style/botonAplicarFiltrarF" />
+
+        <Button
+            android:id="@+id/btnEliminarFiltrosFiltrarF"
+            style="@style/botonEliminarFiltrarF" />
+    </LinearLayout>
+</LinearLayout>

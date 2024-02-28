@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/lnFacturas"
+    tools:context="viewModel.view.MainActivity">
+
+    <LinearLayout style="@style/lnToolBarFacturas">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/toolBarFiltrarF">
+
+            <LinearLayout
+                style="@style/lnWidthMatchHeightWrap">
+
+
+                <RelativeLayout
+                    style="@style/lnWidthMatchHeightWrap">
+
+                    <ImageButton
+                        android:id="@+id/btnIrAFiltrarF"
+                        style="@style/botonIrAFiltrarF" />
+
+                    <Button style="@style/botonConsumoFacturas" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tituloFacturas"
+                    style="@style/h1Facturas" />
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFacturas"
+        style="@style/RecyclerViewFactura"
+
+
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

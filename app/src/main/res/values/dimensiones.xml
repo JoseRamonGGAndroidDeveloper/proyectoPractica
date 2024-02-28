@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //FILTRAR FACTURAS
+    <dimen name="txtSizeH1FiltrarF">30sp</dimen>
+
+    <dimen name="FiltrarF"></dimen>
+    <dimen name="toolBarFiltrarF"></dimen>
+    <dimen name="txtDesdeFiltrarF"></dimen>
+
+    //----------------------------------------------------------------------
+    //GLOBAL
+    <dimen name="sp1">1sp</dimen>
+    <dimen name="sp5">5sp</dimen>
+    <dimen name="sp10">10sp</dimen>
+    <dimen name="sp15">15sp</dimen>
+    <dimen name="sp20">20sp</dimen>
+    <dimen name="sp25">25sp</dimen>
+    <dimen name="sp30">30sp</dimen>
+    <dimen name="sp40">50sp</dimen>
+    <dimen name="sp50">50sp</dimen>
+    <dimen name="sp95">95sp</dimen>
+    <dimen name="sp130">130sp</dimen>
+    <dimen name="sp200">200sp</dimen>
+
+
+</resources>

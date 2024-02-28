@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">a</string>
+
+    //FILTRAR FACTURAS
+
+    <string name="textoH1FiltrarF">Filtrar Facturas</string>
+
+    <string name="textoH2FiltrarF">Con fecha de emisión</string>
+
+    <string name="txtDesdeFiltrarF">Desde</string>
+
+    <string name="txtHastaFiltrarF">Hasta</string>
+
+    <string name="txtBtnDesdeHasta">día/mes/año</string>
+
+    <string name="txtH2Slide">Por un importe</string>
+
+    <string name="txtH2FiltrarFestado">Por estado</string>
+
+    <string name="txtCbPagadas">Pagadas</string>
+
+    <string name="txtCbAnuladas">Anuladas</string>
+
+    <string name="txtCbCuotaFija">Cuota fija</string>
+
+    <string name="txtCbPendienteDePago">Pendiente de pago</string>
+
+    <string name="txtCbPlaneDePago">Plan de pago</string>
+
+    <string name="txtBtnAplicar">Aplicar</string>
+
+    <string name="txtBtnEliminarFiltros">Eliminar Filtros</string>
+
+    <string name="txtTvSlide">0 - 0.00\u20AC</string>
+
+
+    //----------------------------------------------------------------------------------------------
+
+    //FACTURAS
+    <string name="H1Facturas">Facturas</string>
+
+    <string name="ErrorFacturas">Inconcluencia de fechas, revise las fechas</string>
+    <string name="ErrorGeneral">Inconcluencia de fechas, revise las fechas</string>
+
+    <string name="simboloMonetario">\u20AC</string>
+    <string name="tituloPopUp">Información</string>
+    <string name="mensajePopUp">Esta funcionalidad aún no está disponible</string>
+    <string name="mensajeBotonCerrarPopUp">Cerrar</string>
+    <string name="txtBotonConsumo">Consumo</string>
+
+    //----------------------------------------------------------------------------------------------
+    //SMARTSOLAR
+    <string name="H1SmartSolar">Smart Solar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

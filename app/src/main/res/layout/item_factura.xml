@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lnFacturaHorizontal">
+
+
+    <LinearLayout style="@style/lnFacturaHorizontal">
+
+        <TextView
+            android:id="@+id/tvFecha"
+            style="@style/fechaFactura" />
+
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/lnFacturaHorizontalWrap">
+
+
+        <TextView
+            android:id="@+id/tvDescEstado"
+            style="@style/estadoFactura"
+             />
+
+        <TextView
+            android:id="@+id/tvImporteOrdenacion"
+            style="@style/importeFactura"
+
+            />
+
+    </LinearLayout>
+
+    <View style="@style/viewsFactura" />
+
+</LinearLayout>

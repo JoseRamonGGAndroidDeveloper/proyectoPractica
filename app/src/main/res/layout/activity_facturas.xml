@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/lnFacturas"
-    tools:context="viewModel.view.MainActivity">
+    tools:context="viewModel.view.FacturasActivity">
 
     <LinearLayout style="@style/lnToolBarFacturas">
 
@@ -11,18 +11,18 @@
             android:id="@+id/toolbar"
             style="@style/toolBarFiltrarF">
 
-            <LinearLayout
-                style="@style/lnWidthMatchHeightWrap">
+            <LinearLayout style="@style/lnWidthMatchHeightWrap">
 
 
-                <RelativeLayout
-                    style="@style/lnWidthMatchHeightWrap">
+                <RelativeLayout style="@style/lnWidthMatchHeightWrap">
 
                     <ImageButton
                         android:id="@+id/btnIrAFiltrarF"
                         style="@style/botonIrAFiltrarF" />
 
-                    <Button style="@style/botonConsumoFacturas" />
+                    <Button
+                        android:id="@+id/btnConsumoFacturas"
+                        style="@style/botonConsumoFacturas" />
 
                 </RelativeLayout>
 

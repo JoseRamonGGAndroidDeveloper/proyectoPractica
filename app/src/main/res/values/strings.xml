@@ -33,7 +33,6 @@
 
     <string name="txtTvSlide">0 - 0.00\u20AC</string>
 
-
     //----------------------------------------------------------------------------------------------
 
     //FACTURAS
@@ -52,7 +51,39 @@
     //SMARTSOLAR
     <string name="H1SmartSolar">Smart Solar</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txtBotonAtrasSmartSolar">Atrás</string>
+    <string name="txtInstalacionSmartSolar">Mi instalación</string>
+    <string name="txtEnergíaSmartSolar">Energía</string>
+    <string name="txtDetallesSmartSolar">Detalles</string>
+
+    //----------------------------------------------------------------------------------------------
+    //MANAGER
+    <string name="txtBotonManagerFacturas">Facturas</string>
+    <string name="txtBotonManagerSmartSolar">Smart Solar</string>
+
+    //----------------------------------------------------------------------------------------------
+    //FRAGMENT INSTALACION
+    <string name="txtFragmentInstalacion">Aquí tienes los datos de tu instalación fotovoltaica en tiempo real</string>
+    <string name="txtPorcentajeInstalacion">92%</string>
+    <string name="txtAutoconsumoInstalacion">Autoconsumo: </string>
+
+    //----------------------------------------------------------------------------------------------
+    //FRAGMENT ENERGIA
+    <string name="txtFragmentEnergia">Smart Solar</string>
+    <string name="txtMejoraEnergia">Estamos trabajando en mejorar la App. Tus paneles solares siguen produciendo, en breve podrás seguir viendo tu producción solar. Sentimos las molestias.</string>
+
+    //----------------------------------------------------------------------------------------------
+    //FRAGMENT DETALLES
+    <string name="txtFragmentDetallesCau">CAU (Código Autoconsumo)</string>
+    <string name="txtFragmentDetallesNumBanco">ES0021000000001994LJ1FA00</string>
+    <string name="txtFragmentDetallesEstado">Estado solicitud alta autoconsumidor</string>
+    <string name="txtFragmentDetallesTxtEstado">No hemos recibido ninguna solicitud de autoconsumo</string>
+    <string name="txtFragmentDetallesAutoconsumo">Tipo autoconsumo</string>
+    <string name="txtFragmentDetallesTxtAutoconsumo">Con excedentes y compensación Individual - Consumo</string>
+    <string name="txtFragmentDetallesCompensacion">Compensación de excedentes</string>
+    <string name="txtFragmentDetallesTxtCompensacion">Precio PVPC</string>
+    <string name="txtFragmentDetallesPotencia">Potencia de instalación</string>
+    <string name="txtFragmentDetallesTxtPotencia">5kWp</string>
 
 
 </resources>

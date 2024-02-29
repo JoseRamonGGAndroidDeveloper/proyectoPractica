@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/lnFullMatch"
+    tools:context="viewModel.view.ManagerActivity">
+
+    <LinearLayout style="@style/lnWidthMatchHeightWrapGravityCenter">
+
+        <Button
+            android:id="@+id/btnManagerFacturas"
+            style="@style/botonManagerFacturas" />
+
+        <Button
+            android:id="@+id/btnManagerSmartSolar"
+            style="@style/botonManagerSmartSolar" />
+    </LinearLayout>
+
+</LinearLayout>

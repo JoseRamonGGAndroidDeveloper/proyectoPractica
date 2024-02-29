@@ -29,7 +29,6 @@
         <item name="tickColor">@color/PrimaryGreen</item>
         <item name="trackColorActive">@color/PrimaryGreen</item>
 
-
     </style>
 
     //Textos
@@ -45,7 +44,6 @@
 
     </style>
 
-
     <style name="h2FiltrarF">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
@@ -55,7 +53,6 @@
         <item name="android:text">@string/textoH2FiltrarF</item>
         <item name="android:fontFamily">@font/open_sans</item>
     </style>
-
 
     <style name="desdeFiltrarF">
         <item name="android:layout_marginStart">@dimen/sp15</item>
@@ -77,7 +74,6 @@
         <item name="android:text">@string/txtHastaFiltrarF</item>
         <item name="android:fontFamily">@font/open_sans</item>
 
-
     </style>
 
     <style name="h2SlideFiltrarFacturas">
@@ -88,11 +84,9 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/txtH2Slide</item>
 
-
     </style>
 
     <style name="textViewRangoSlide">
-
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
@@ -102,7 +96,6 @@
 
     </style>
 
-
     <style name="viewsFiltrarF">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/sp1</item>
@@ -111,8 +104,6 @@
         <item name="android:layout_marginStart">@dimen/sp15</item>
         <item name="android:layout_marginEnd">@dimen/sp15</item>
         <item name="android:background">@color/lightGray</item>
-
-
     </style>
 
 
@@ -125,12 +116,9 @@
         <item name="android:layout_marginStart">@dimen/sp5</item>
         <item name="android:layout_marginEnd">@dimen/sp5</item>
         <item name="android:background">@color/lightGray</item>
-
-
     </style>
 
     <style name="h2FiltrarFestado">
-
         <item name="android:layout_marginStart">@dimen/sp15</item>
         <item name="android:color">@color/black</item>
         <item name="android:textStyle">bold</item>
@@ -168,8 +156,6 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:text">@string/txtBtnDesdeHasta</item>
         <item name="android:fontFamily">@font/open_sans</item>
-
-
     </style>
 
     <style name="botonFechaHastaFiltrarF" parent="Widget.AppCompat.Button">
@@ -182,12 +168,10 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:text">@string/txtBtnDesdeHasta</item>
         <item name="android:fontFamily">@font/open_sans</item>
-
     </style>
 
 
     <style name="botonAplicarFiltrarF">
-
         <item name="android:backgroundTint">@color/PrimaryGreen</item>
         <item name="android:layout_width">@dimen/sp200</item>
         <item name="android:layout_height">wrap_content</item>
@@ -215,7 +199,37 @@
         <item name="android:text">@string/mensajeBotonCerrarPopUp</item>
         <item name="android:fontFamily">@font/open_sans</item>
         <item name="android:onClick">dismissPopUp</item>
+    </style>
 
+    <style name="botonManagerFacturas">
+        <item name="android:backgroundTint">@color/PrimaryGreen</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/sp50</item>
+        <item name="android:text">@string/txtBotonManagerFacturas</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="botonManagerSmartSolar">
+        <item name="android:backgroundTint">@color/PrimaryGreen</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/sp95</item>
+        <item name="android:text">@string/txtBotonManagerSmartSolar</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="botonAtrasSmartSolar">
+        <item name="android:backgroundTint">#FFFFFF</item>
+        <item name="android:textColor">@color/PrimaryGreen</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/txtBotonAtrasSmartSolar</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:drawableLeft">@drawable/baseline_arrow_back_ios_new_24</item>
+        <item name="android:drawableTint">@color/PrimaryGreen</item>
     </style>
 
     //LINEARLAYOUTs
@@ -234,6 +248,13 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="lnWidthMatchHeightWrapGravityCenter">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
     </style>
 
     <style name="lnToolBarFacturas">
@@ -265,7 +286,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
         <item name="android:titleMargin">@dimen/sp30</item>
-
     </style>
 
     <style name="lnFacturaHorizontalRecycler">
@@ -274,7 +294,6 @@
         <item name="android:orientation">vertical</item>
         <item name="android:titleMargin">@dimen/sp30</item>
         <item name="android:padding">@dimen/sp20</item>
-
     </style>
 
     <style name="lnFacturaHorizontalWrap">
@@ -307,9 +326,24 @@
 
     <style name="lnSmartSolar">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
         <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="lnDetallesSmartSolar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/sp10</item>
+    </style>
+
+
+    <style name="lnMiInstalacionSmartSolar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/sp10</item>
     </style>
 
     <style name="lnPopUpFacturas">
@@ -317,6 +351,19 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
         <item name="android:padding">@dimen/sp15</item>
+    </style>
+
+    <style name="lnSegmentosDetallesFirst">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="lnSegmentosDetallesGeneral">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/sp30</item>
     </style>
 
 
@@ -329,7 +376,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/txtCbPagadas</item>
         <item name="android:fontFamily">@font/open_sans</item>
-
     </style>
 
     <style name="checkBoxAnuladas">
@@ -374,7 +420,6 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/sp10</item>
-
     </style>
 
     //----------------------------------------------------------------------------------------------
@@ -402,7 +447,6 @@
         <item name="android:backgroundTint">#FFFFFF</item>
         <item name="android:fontFamily">@font/open_sans</item>
         <item name="android:textColor">@color/PrimaryGreen</item>
-
     </style>
 
     <style name="botonIrAFiltrarF">
@@ -423,7 +467,6 @@
         <item name="android:text">@string/txtCbPagadas</item>
         <item name="android:textSize">@dimen/sp20</item>
         <item name="android:layout_marginStart">@dimen/sp15</item>
-
     </style>
 
     <style name="estadoFactura">
@@ -483,5 +526,173 @@
         <item name="android:fontFamily">@font/open_sans</item>
     </style>
 
+    //TABSITEMS
+
+    <style name="tiSmartSolarInstalacion">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:text">@string/txtInstalacionSmartSolar</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="tiSmartSolarEnergia">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:text">@string/txtEnergíaSmartSolar</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="tiSmartSolarDetalles">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:text">@string/txtDetallesSmartSolar</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    //TABSLAYOUTS
+
+    <style name="tlSmartSolar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    /VIEWPAGERS
+
+    <style name="viSmartSolar">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    /FRAGMENT INSTALACION
+
+    <style name="txtFragmentInstalacion">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/sp10</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:text">@string/txtFragmentInstalacion</item>
+    </style>
+
+    <style name="txtFragmentInstalacionAutoconsumo">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:layout_marginTop">@dimen/sp30</item>
+        <item name="android:layout_marginLeft">@dimen/sp10</item>
+        <item name="android:text">@string/txtAutoconsumoInstalacion</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="txtFragmentInstalacionPorcentaje">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:layout_marginTop">@dimen/sp30</item>
+        <item name="android:layout_marginLeft">@dimen/sp5</item>
+        <item name="android:text">@string/txtPorcentajeInstalacion</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="imageViewInstalacion">
+        <item name="android:layout_height">@dimen/sp370</item>
+        <item name="android:layout_width">@dimen/sp370</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/sp20</item>
+        <item name="android:src">@mipmap/ic_consumo_round</item>
+
+    </style>
+
+    //FRAGMENT ENERGIA
+
+    <style name="txtEnergia">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">@dimen/sp300</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/sp30</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/txtMejoraEnergia</item>
+    </style>
+
+    <style name="imageViewEnergia">
+        <item name="android:layout_height">@dimen/sp370</item>
+        <item name="android:layout_width">@dimen/sp370</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/sp20</item>
+        <item name="android:src">@mipmap/ic_instalacion_round</item>
+
+    </style>
+
+    /FRAGMENT DETALLES
+
+    <style name="h2Cau">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/txtFragmentDetallesCau</item>
+    </style>
+
+    <style name="txtCau">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/txtFragmentDetallesNumBanco</item>
+    </style>
+
+    <style name="h2Estado">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/txtFragmentDetallesEstado</item>
+    </style>
+
+    <style name="txtEstado">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/txtFragmentDetallesTxtEstado</item>
+    </style>
+
+    <style name="h2Autoconsumo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/txtAutoconsumoInstalacion</item>
+    </style>
+
+    <style name="txtAutoconsumo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/txtFragmentDetallesTxtAutoconsumo</item>
+    </style>
+
+    <style name="h2Compensacion">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/txtFragmentDetallesCompensacion</item>
+    </style>
+
+    <style name="txtCompensacion">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/txtFragmentDetallesTxtCompensacion</item>
+    </style>
+
+    <style name="h2Potencia">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/txtFragmentDetallesPotencia</item>
+    </style>
+
+    <style name="txtPotencia">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/txtFragmentDetallesTxtPotencia</item>
+    </style>
+
 </resources>
+
+
 

@@ -1,13 +1,90 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="viewModel.view.DetallesFragment">
+    style="@style/lnSmartSolar"
+    tools:context="viewModel.view.EnergiaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <LinearLayout style="@style/lnDetallesSmartSolar">
 
-</FrameLayout>
+        <LinearLayout style="@style/lnSegmentosDetallesFirst">
+
+            <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+                <TextView style="@style/h2Cau" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+                <EditText style="@style/txtCau" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/lnSegmentosDetallesGeneral">
+
+            <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+                <TextView style="@style/h2Estado" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+                <EditText style="@style/txtEstado" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/lnSegmentosDetallesGeneral">
+
+            <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+                <TextView style="@style/h2Autoconsumo" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+                <EditText style="@style/txtAutoconsumo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/lnSegmentosDetallesGeneral">
+
+            <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+                <TextView style="@style/h2Compensacion" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+                <EditText style="@style/txtCompensacion" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/lnSegmentosDetallesGeneral">
+
+            <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+                <TextView style="@style/h2Potencia" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+                <EditText style="@style/txtPotencia" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

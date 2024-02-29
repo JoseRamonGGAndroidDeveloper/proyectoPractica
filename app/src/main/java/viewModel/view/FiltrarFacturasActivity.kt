@@ -23,10 +23,6 @@ class FiltrarFacturasActivity : AppCompatActivity() {
 
     var slideValue = 99f
 
-    //val vm: FacturasViewModel by viewModels { FacturasViewModel.FacturasViewModelFactory(application)}
-
-   // var importeMax = vm.getImporteMasAlta()
-
     //filtrarBinding
     private lateinit var filtrarBinding: ActivityFiltrarFacturasBinding
 

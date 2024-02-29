@@ -9,7 +9,6 @@
             android:id="@+id/tvFecha"
             style="@style/fechaFactura" />
 
-
     </LinearLayout>
 
     <LinearLayout style="@style/lnFacturaHorizontalWrap">
@@ -17,8 +16,7 @@
 
         <TextView
             android:id="@+id/tvDescEstado"
-            style="@style/estadoFactura"
-             />
+            style="@style/estadoFactura" />
 
         <TextView
             android:id="@+id/tvImporteOrdenacion"

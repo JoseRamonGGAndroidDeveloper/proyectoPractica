@@ -16,8 +16,8 @@ interface FacturaDao {
     suspend fun insertFacturas(facturas: List<DataFactura>)
 
     @Query("DELETE FROM facturas")
-        suspend fun eliminarBaseDeDatos()
+    suspend fun eliminarBaseDeDatos()
 
-        @Query("SELECT MAX(importeOrdenacion)  FROM facturas")
-        suspend fun mayorImporte() : Double
+    @Query("SELECT MAX(importeOrdenacion)  FROM facturas")
+    suspend fun mayorImporte(): Double
 }

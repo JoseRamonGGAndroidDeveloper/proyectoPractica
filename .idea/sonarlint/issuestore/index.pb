@@ -25,3 +25,23 @@ g
 7app/src/main/java/viewModel/view/InstalacionFragment.kt,b\d\bddd043df5f542833423fd74ca5f7ce2e58bab87
 k
 ;app/src/main/java/viewModel/view/FiltrarFacturasActivity.kt,a\f\af7cd715707dc28c69ef16ead5f8b7e887c95bbd
+d
+4app/src/main/java/viewModel/view/FragmentsAdapter.kt,9\7\97ed27d919a9f3463398e6e3860b103c601e496c
+c
+3app/src/main/java/viewModel/view/ManagerActivity.kt,5\b\5b244910697c41fe76714335d6a2b4062fcbaee1
+`
+0app/src/main/java/viewModel/view/MainActivity.kt,8\3\83641cc7b96ad41486106a1d94fceb26a8dffb54
+f
+6app/src/main/java/viewModel/view/SmartSolarActivity.kt,e\b\eb727d3bc26d0d6b8d868b52209954f28813b322
+d
+4app/src/main/java/viewModel/view/FacturasActivity.kt,c\4\c47b10ab9c0c6c18040849f3a6a6cf96b0e4c9a6
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+D
+app/build.gradle.kts,d\2\d2a4383452aad84a18429a5844d31330a012a9e6
+@
+build.gradle.kts,d\b\dbcff70658daf80b53ce624f6adcaa529df5ed8d
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0

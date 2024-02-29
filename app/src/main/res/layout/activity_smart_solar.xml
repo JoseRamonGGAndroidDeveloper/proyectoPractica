@@ -3,18 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/lnSmartSolar"
-    tools:context="viewModel.view.SmartSolar">
+    tools:context="viewModel.view.SmartSolarActivity">
 
     <LinearLayout style="@style/lnWidthMatchHeightWrap">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFFFFF"
-            android:drawableLeft="@drawable/baseline_arrow_back_ios_new_24"
-            android:drawableTint="@color/PrimaryGreen"
-            android:text="Atrás"
-            android:textColor="@color/PrimaryGreen" />
+            android:id="@+id/btnAtrasSmartSolar"
+            style="@style/botonAtrasSmartSolar" />
 
     </LinearLayout>
 
@@ -25,19 +20,21 @@
             style="@style/h1SmartSolar" />
     </LinearLayout>
 
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabSmartSolar"
+        style="@style/tlSmartSolar">
 
-        <TableRow>
-            <TextView
-                android:text="AAAA"
-                />
+        <com.google.android.material.tabs.TabItem style="@style/tiSmartSolarInstalacion" />
 
-            <TextView
-                android:text="BBBB"
-                />
-        </TableRow>
-    </TableLayout>
+        <com.google.android.material.tabs.TabItem style="@style/tiSmartSolarEnergia" />
+
+        <com.google.android.material.tabs.TabItem style="@style/tiSmartSolarDetalles" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/ViewPagerSmartSolar"
+        style="@style/viSmartSolar" />
 
 </LinearLayout>

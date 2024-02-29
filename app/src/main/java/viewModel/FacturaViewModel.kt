@@ -13,10 +13,7 @@ import dataModel.data.FacturaDataBase
 
 class FacturasViewModel(application: Application) : AndroidViewModel(application) {
     private val facturaDao: FacturaDao
-    //private val database: FacturaDataBase = Room.databaseBuilder(
-    //    application.applicationContext,
-    //    FacturaDataBase::class.java, "facturas"
-    //).build()
+
     private val database: FacturaDataBase by lazy{FacturaDataBase.getDatabase(application)}
 
     init {
@@ -34,17 +31,6 @@ class FacturasViewModel(application: Application) : AndroidViewModel(application
         }
     }
 
-    fun getImporteMasAlta() : Double{
-        var importeMax : Double = 0.0
-        viewModelScope.launch {
-          importeMax = facturaDao.mayorImporte()
-        }
-        return importeMax
-    }
-
-    fun getAllFacturas(): LiveData<List<DataFactura>> {
-        return facturaDao.getAllFacturas()
-    }
 
     class FacturasViewModelFactory(private val application: Application) : ViewModelProvider.Factory {
         override fun<T : ViewModel> create(modelClass:Class<T>): T {

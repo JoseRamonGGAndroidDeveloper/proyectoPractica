@@ -4,14 +4,13 @@
 
     <TextView
         android:id="@+id/tvTitulo"
-       style="@style/h1PopUp"/>
+        style="@style/h1PopUp" />
 
     <TextView
         android:id="@+id/tvMensaje"
-        style="@style/mensajePopUp"/>
+        style="@style/mensajePopUp" />
 
     <Button
         android:id="@+id/botonCerrarPopUp"
-        style="@style/botonCerrarPopUp"
-        />
+        style="@style/botonCerrarPopUp" />
 </LinearLayout>

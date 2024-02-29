@@ -1,13 +1,37 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/lnSmartSolar"
+
     tools:context="viewModel.view.InstalacionFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+        <LinearLayout style="@style/lnWidthMatchHeightWrap">
+
+            <TextView
+                android:id="@+id/tvFragmentInstalacion"
+                style="@style/txtFragmentInstalacion" />
+
+        </LinearLayout>
+
+
+
+    <LinearLayout style="@style/lnFullWrap">
+
+        <TextView
+            android:id="@+id/tvAutoconsumoInstalacion"
+            style="@style/txtFragmentInstalacionAutoconsumo" />
+
+
+        <TextView
+            android:id="@+id/tvPorcentajeInstalacion"
+            style="@style/txtFragmentInstalacionPorcentaje" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivInstalacion"
+        style="@style/imageViewInstalacion" />
+
+
+</LinearLayout>

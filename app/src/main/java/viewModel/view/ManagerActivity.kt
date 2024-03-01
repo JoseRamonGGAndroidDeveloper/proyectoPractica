@@ -21,6 +21,7 @@ class ManagerActivity : AppCompatActivity() {
 
         goFacturas()
         goSmartSolar()
+        cerrarApp()
 
         managerBinding.rbRetroFit.setOnClickListener() {
             isRetrofitSelected = true
@@ -66,6 +67,12 @@ class ManagerActivity : AppCompatActivity() {
                     isRetrofitSelected = false
                 }
             }
+        }
+    }
+
+    fun cerrarApp(){
+        managerBinding.botonCerrarApp.setOnClickListener(){
+            finishAffinity()
         }
     }
 

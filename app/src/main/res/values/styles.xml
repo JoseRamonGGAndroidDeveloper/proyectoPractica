@@ -220,6 +220,17 @@
         <item name="android:fontFamily">@font/open_sans</item>
     </style>
 
+    <style name="botonManagerCerrarApp">
+        <item name="android:backgroundTint">@color/PrimaryGreen</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/sp50</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text">@string/txtBotonManagerCerrarApp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
     <style name="botonManagerSmartSolar">
         <item name="android:backgroundTint">@color/PrimaryGreen</item>
         <item name="android:textColor">@color/white</item>

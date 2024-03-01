@@ -8,6 +8,7 @@
     <LinearLayout style="@style/lnIvManager">
 
         <ImageView style="@style/ivManager" />
+
     </LinearLayout>
 
     <LinearLayout style="@style/lnSubManager">
@@ -38,5 +39,9 @@
         </RadioGroup>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/botonCerrarApp"
+        style="@style/botonManagerCerrarApp"/>
 
 </LinearLayout>

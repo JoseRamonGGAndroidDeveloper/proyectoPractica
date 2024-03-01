@@ -36,7 +36,7 @@
 
     <string name="txtToasFechaHasta">La fecha hasta no puede ser menor que la fecha desde</string>
 
-    <string name="txtToasFechaDeste">La fecha desde no puede ser mayor que la fecha hasta</string>
+    <string name="txtToasFechaDeste">La fecha desde no puede ser mayor ni igual que la fecha hasta</string>
 
 
     //----------------------------------------------------------------------------------------------
@@ -66,6 +66,7 @@
     //MANAGER
     <string name="txtBotonManagerFacturas">Facturas</string>
     <string name="txtBotonManagerSmartSolar">Smart Solar</string>
+    <string name="txtBotonManagerCerrarApp">Cerrar App</string>
 
     //----------------------------------------------------------------------------------------------
     //FRAGMENT INSTALACION

@@ -2,8 +2,11 @@ package viewModel.view
 
 
 import android.app.DatePickerDialog
+import android.app.Dialog
+import android.content.Context
 import android.icu.text.SimpleDateFormat
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -50,7 +53,29 @@ class FiltrarFacturasActivity : AppCompatActivity() {
         //Cerrar pestaña sin guardar
         cerrarActivitySinCambios()
 
+        //Al pulsar aplicar abre popUp
+        filtrosNoImplementados()
+
         MaxSlider()
+    }
+
+    fun filtrosNoImplementados(){
+        filtrarBinding.btnAplicarFiltrarF.setOnClickListener(){
+            showPopUp(this)
+        }
+    }
+
+    private fun showPopUp(context: Context) {
+        val dialog = Dialog(context)
+        dialog.setContentView(R.layout.popup_layout)
+
+        val botonCerrar = dialog.findViewById<Button>(R.id.botonCerrarPopUp)
+
+        botonCerrar.setOnClickListener {
+            dialog.dismiss()
+        }
+
+        dialog.show()
     }
 
     fun selectorFechaDesde() {

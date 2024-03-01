@@ -17,7 +17,6 @@
     //SLIDE
 
     <style name="SlideFiltrarFacturas" parent="@style/Widget.MaterialComponents.Slider">
-
         <item name="android:layout_marginTop">@dimen/sp20</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -28,7 +27,6 @@
         <item name="mock_labelColor">@color/PrimaryGreen</item>
         <item name="tickColor">@color/PrimaryGreen</item>
         <item name="trackColorActive">@color/PrimaryGreen</item>
-
     </style>
 
     //PROGRESSBAR

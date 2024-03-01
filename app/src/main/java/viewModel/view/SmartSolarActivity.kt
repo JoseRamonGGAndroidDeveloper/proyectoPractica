@@ -22,10 +22,10 @@ class SmartSolarActivity : AppCompatActivity() {
         fragmentsAdapter.addFragment(EnergiaFragment(), "Energía")
         fragmentsAdapter.addFragment(DetallesFragment(), "Detalles")
 
-        solarBinding.ViewPagerSmartSolar.adapter=fragmentsAdapter
+        solarBinding.ViewPagerSmartSolar.adapter = fragmentsAdapter
         solarBinding.tabSmartSolar.setupWithViewPager(solarBinding.ViewPagerSmartSolar)
 
-        solarBinding.btnAtrasSmartSolar.setOnClickListener(){
+        solarBinding.btnAtrasSmartSolar.setOnClickListener() {
             val intent = Intent(this, ManagerActivity::class.java)
             startActivity(intent)
         }

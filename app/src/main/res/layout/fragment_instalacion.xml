@@ -5,14 +5,13 @@
     tools:context="viewModel.view.InstalacionFragment">
 
 
-        <LinearLayout style="@style/lnWidthMatchHeightWrap">
+    <LinearLayout style="@style/lnWidthMatchHeightWrap">
 
-            <TextView
-                android:id="@+id/tvFragmentInstalacion"
-                style="@style/txtFragmentInstalacion" />
+        <TextView
+            android:id="@+id/tvFragmentInstalacion"
+            style="@style/txtFragmentInstalacion" />
 
-        </LinearLayout>
-
+    </LinearLayout>
 
 
     <LinearLayout style="@style/lnFullWrap">

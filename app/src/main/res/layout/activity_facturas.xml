@@ -38,12 +38,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvFacturas"
-        style="@style/RecyclerViewFactura"
+        style="@style/RecyclerViewFactura" />
 
-
-        >
-
-    </androidx.recyclerview.widget.RecyclerView>
-
+    <ProgressBar
+        android:id="@+id/progressBarFacturas"
+        style="@style/progressBarFacturas" />
 
 </LinearLayout>

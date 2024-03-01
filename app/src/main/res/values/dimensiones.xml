@@ -18,6 +18,7 @@
     <dimen name="sp25">25sp</dimen>
     <dimen name="sp30">30sp</dimen>
     <dimen name="sp40">40sp</dimen>
+    <dimen name="sp48">48sp</dimen>
     <dimen name="sp50">50sp</dimen>
     <dimen name="sp60">60sp</dimen>
     <dimen name="sp70">70sp</dimen>

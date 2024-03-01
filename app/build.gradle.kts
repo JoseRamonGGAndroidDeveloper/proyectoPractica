@@ -64,10 +64,14 @@ dependencies {
 
 
     //retrofit - corrutinas - retromock
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.6")
     implementation ("co.infinum:retromock:1.1.1")
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("com.squareup.retrofit2:retrofit-mock:2.9.0")
+    testImplementation ("com.squareup.retrofit2:retrofit-mock:2.9.0")
+    testImplementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    testImplementation ("com.squareup.retrofit2:converter-scalars:2.9.0")
 
 
     testImplementation("junit:junit:4.13.2")

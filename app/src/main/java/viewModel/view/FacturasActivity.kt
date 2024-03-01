@@ -3,10 +3,12 @@ package viewModel.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import co.infinum.retromock.Retromock
 import com.example.a.R
 import com.example.a.databinding.ActivityFacturasBinding
 import kotlinx.coroutines.CoroutineScope
@@ -38,14 +40,26 @@ class FacturasActivity : AppCompatActivity() {
         facturasBinding = ActivityFacturasBinding.inflate(layoutInflater)
         setContentView(facturasBinding.root)
 
+        val isRetroFitSelected = intent.getBooleanExtra("isRetrofitSelected", true)
+
+        facturasBinding.progressBarFacturas.visibility = View.VISIBLE
+
         //(FALTA CONTROLAR SI ESTÁ VACÍA LA LISTA DE FACTURAS)
         irAlFiltro()
         irAlManager()
         iniciarRecyclerView()
-        corrutinaFactura()
+
+
+
+        if (isRetroFitSelected) {
+            corrutinaFacturaRetrofit()
+        } else {
+            corrutinaFacturaRetroMock()
+        }
+
     }
 
-    fun irAlManager() {
+     fun irAlManager() {
         facturasBinding.btnConsumoFacturas.setOnClickListener() {
             val intent = Intent(this, ManagerActivity::class.java)
             startActivity(intent)
@@ -72,16 +86,43 @@ class FacturasActivity : AppCompatActivity() {
     }
 
     fun getRetrofit(): Retrofit {
-        return Retrofit.Builder().baseUrl(url).addConverterFactory(GsonConverterFactory.create())
+        return Retrofit.Builder().baseUrl(url)
+            .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 
-    private fun corrutinaFactura() {
+    fun getRetroMock(): Retromock {
+        return Retromock.Builder()
+            .retrofit(getRetrofit())
+            .build()
+    }
+
+    private fun corrutinaFacturaRetroMock() {
+        CoroutineScope(Dispatchers.IO).launch {
+            val llamada = getRetroMock().create(ApiRequest::class.java).getFacturas()
+            val result = llamada.body()
+            runOnUiThread {
+                if (llamada.isSuccessful) {
+                    facturasBinding.progressBarFacturas.visibility = View.GONE
+                    val factura = result?.facturas ?: emptyList()
+                    vm.EliminarFacturasDeBDD()
+                    vm.insertFacturasFromApi(factura)
+                    adaptador.listaFacturas.addAll(factura)
+                    adaptador.notifyDataSetChanged()
+                } else {
+                    showError()
+                }
+            }
+        }
+    }
+
+    private fun corrutinaFacturaRetrofit() {
         CoroutineScope(Dispatchers.IO).launch {
             val llamada = getRetrofit().create(ApiRequest::class.java).getFacturas()
             val result = llamada.body()
             runOnUiThread {
                 if (llamada.isSuccessful) {
+                    facturasBinding.progressBarFacturas.visibility = View.GONE
                     val factura = result?.facturas ?: emptyList()
                     vm.EliminarFacturasDeBDD()
                     vm.insertFacturasFromApi(factura)

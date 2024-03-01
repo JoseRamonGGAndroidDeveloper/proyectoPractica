@@ -13,7 +13,6 @@ class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     private var bindingRecycler = ItemFacturaBinding.bind(view)
 
 
-
     fun bind(factura: DataFactura) {
         bindingRecycler.tvFecha.text = cambiarFormatoFecha(factura.fecha)
 
@@ -24,7 +23,6 @@ class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         // bindingRecycler.tvDescEstado.isVisible = false
         pendientePago(factura.descEstado)
     }
-
 
 
     fun pendientePago(estadoPago: String) {
@@ -49,7 +47,7 @@ class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var anio = fechaEnPartes[2]
 
 
-       when (mes) {
+        when (mes) {
             "01" -> mes = "Ene"
             "02" -> mes = "Feb"
             "03" -> mes = "Mar"
@@ -65,7 +63,7 @@ class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             else -> mes = "XX"
         }
 
-        val fechaFormateada = dia+" "+mes+" "+anio
+        val fechaFormateada = dia + " " + mes + " " + anio
         return fechaFormateada
     }
 }

@@ -14,23 +14,26 @@ class RecyclerAdapter : RecyclerView.Adapter<ViewHolder>() {
 
     var listaFacturas: MutableList<DataFactura> = ArrayList()
 
-    fun RecyclerAdapter(listaFacturas: MutableList<DataFactura>){
+    fun RecyclerAdapter(listaFacturas: MutableList<DataFactura>) {
         this.listaFacturas = listaFacturas
     }
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = listaFacturas.get(position)
+        val item = listaFacturas[position]
         holder.bind(item)
 
         holder.itemView.setOnClickListener {
             showPopUp(holder.itemView.context)
         }
     }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         return ViewHolder(layoutInflater.inflate(R.layout.item_factura, parent, false))
 
 
     }
+
     override fun getItemCount(): Int {
         return listaFacturas.size
     }

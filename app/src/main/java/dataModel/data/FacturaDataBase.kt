@@ -20,7 +20,7 @@ abstract class FacturaDataBase : RoomDatabase() {
                     FacturaDataBase::class.java,
                     "item_database"
                 ).fallbackToDestructiveMigration().build()
-                INSTANCE =instance
+                INSTANCE = instance
                 return instance
             }
         }

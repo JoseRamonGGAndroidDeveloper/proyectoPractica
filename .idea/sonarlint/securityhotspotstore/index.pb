@@ -15,8 +15,6 @@ c
 0app/src/main/java/dataModel/model/DataFactura.kt,0\7\0742ac7f085df5b3eb475bc827a2b61e237c2372
 f
 6app/src/main/java/dataModel/model/DataListaFacturas.kt,4\4\4434602499213c82c6730aeac0fc4978aa838bb7
-^
-.app/src/main/java/viewModel/view/SmartSolar.kt,3\0\30daf19040fc92394774d1e05a17037eff480063
 c
 3app/src/main/java/viewModel/view/EnergiaFragment.kt,2\f\2f9680abd50fbe7964a9c1996dcba80940ca0b1c
 d
@@ -29,8 +27,6 @@ d
 4app/src/main/java/viewModel/view/FragmentsAdapter.kt,9\7\97ed27d919a9f3463398e6e3860b103c601e496c
 c
 3app/src/main/java/viewModel/view/ManagerActivity.kt,5\b\5b244910697c41fe76714335d6a2b4062fcbaee1
-`
-0app/src/main/java/viewModel/view/MainActivity.kt,8\3\83641cc7b96ad41486106a1d94fceb26a8dffb54
 f
 6app/src/main/java/viewModel/view/SmartSolarActivity.kt,e\b\eb727d3bc26d0d6b8d868b52209954f28813b322
 d

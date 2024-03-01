@@ -2,10 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/lnFullMatch"
+    style="@style/lnManager"
     tools:context="viewModel.view.ManagerActivity">
 
-    <LinearLayout style="@style/lnWidthMatchHeightWrapGravityCenter">
+    <LinearLayout style="@style/lnIvManager">
+
+        <ImageView style="@style/ivManager" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/lnSubManager">
 
         <Button
             android:id="@+id/btnManagerFacturas"
@@ -14,6 +19,24 @@
         <Button
             android:id="@+id/btnManagerSmartSolar"
             style="@style/botonManagerSmartSolar" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/lnManagerCheckBox">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            style="@style/RadioGroupManager">
+
+            <RadioButton
+                android:id="@+id/rbRetroFit"
+                style="@style/radioButtonRetrofit" />
+
+            <RadioButton
+                android:id="@+id/rbRetroMock"
+                style="@style/radioButtonRetroMock" />
+
+        </RadioGroup>
+
     </LinearLayout>
 
 </LinearLayout>

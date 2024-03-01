@@ -22,10 +22,9 @@ class FragmentsAdapter(manager: FragmentManager) :
         return FragmentTitle[position]
     }
 
-     fun addFragment(fragment: Fragment, title : String) {
+    fun addFragment(fragment: Fragment, title: String) {
         FragmentTitle.add(title)
-         FragmentList.add(fragment)
+        FragmentList.add(fragment)
     }
-
 
 }

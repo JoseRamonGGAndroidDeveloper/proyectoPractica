@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
     //FILTRAR FACTURAS
 
     //TOOLBARs
@@ -22,7 +23,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:color">@color/PrimaryGreen</item>
         <item name="android:valueFrom">0f</item>
-        <item name="android:valueTo">999999f</item>
         <item name="thumbColor">@color/PrimaryGreen</item>
         <item name="color">@color/PrimaryGreen</item>
         <item name="mock_labelColor">@color/PrimaryGreen</item>
@@ -31,6 +31,17 @@
 
     </style>
 
+    //PROGRESSBAR
+
+    <style name="progressBarFacturas">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/sp50</item>
+        <item name="android:indeterminateTint">@color/PrimaryGreen</item>
+
+    </style>
     //Textos
 
     <style name="h1FiltrarF">
@@ -244,6 +255,13 @@
         <item name="android:layout_height">match_parent</item>
     </style>
 
+    <style name="lnManager">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
     <style name="lnWidthMatchHeightWrap">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -257,11 +275,24 @@
         <item name="android:layout_gravity">center</item>
     </style>
 
+    <style name="lnSubManager">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/sp60</item>
+    </style>
+
     <style name="lnToolBarFacturas">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/sp10</item>
         <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="lnManagerCheckBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/sp10</item>
     </style>
 
     <style name="lnWidtWrapHeightMatch">
@@ -366,7 +397,12 @@
         <item name="android:layout_marginTop">@dimen/sp30</item>
     </style>
 
+    <style name="lnIvManager">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
 
+    </style>
     //CHECKBOXES
 
     <style name="checkBoxPagadas">
@@ -412,6 +448,29 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/txtCbPlaneDePago</item>
         <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="RadioGroupManager">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/sp50</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="radioButtonRetrofit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:buttonTint">@color/PrimaryGreen</item>
+        <item name="android:checked">true</item>
+        <item name="android:text">@string/txtRbRetrofit</item>
+    </style>
+
+    <style name="radioButtonRetroMock">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:buttonTint">@color/PrimaryGreen</item>
+        <item name="android:text">@string/txtRbRetroMock</item>
+
     </style>
 
     //RECYCLERVIEWS
@@ -561,6 +620,10 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:background">@color/white</item>
+        <item name="tabIndicatorColor">@color/black</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+        <item name="tabRippleColor">@color/lightGray</item>
+
     </style>
 
     /VIEWPAGERS
@@ -640,8 +703,9 @@
 
     <style name="txtCau">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">@dimen/sp48</item>
         <item name="android:text">@string/txtFragmentDetallesNumBanco</item>
+        <item name="android:editable">false</item>
     </style>
 
     <style name="h2Estado">
@@ -654,6 +718,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/txtFragmentDetallesTxtEstado</item>
+        <item name="android:editable">false</item>
     </style>
 
     <style name="h2Autoconsumo">
@@ -666,6 +731,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/txtFragmentDetallesTxtAutoconsumo</item>
+        <item name="android:editable">false</item>
     </style>
 
     <style name="h2Compensacion">
@@ -676,8 +742,9 @@
 
     <style name="txtCompensacion">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">@dimen/sp48</item>
         <item name="android:text">@string/txtFragmentDetallesTxtCompensacion</item>
+        <item name="android:editable">false</item>
     </style>
 
     <style name="h2Potencia">
@@ -688,10 +755,21 @@
 
     <style name="txtPotencia">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
         <item name="android:text">@string/txtFragmentDetallesTxtPotencia</item>
+        <item name="android:colorAccent">@color/PrimaryGreen</item>
+        <item name="android:editable">false</item>
     </style>
 
+    //MANAGER
+
+    <style name="ivManager">
+        <item name="android:layout_width">@dimen/sp300</item>
+        <item name="android:layout_height">@dimen/sp300</item>
+        <item name="android:layout_marginLeft">@dimen/sp50</item>
+        <item name="android:src">@mipmap/ic_launcher</item>
+
+    </style>
 </resources>
 
 
